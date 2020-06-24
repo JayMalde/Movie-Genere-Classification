@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Movie Genre Predictor</title>
+</head>
+<body>
+{% include 'top.html' %}
+
+	<div class="ml-container">
+		<form action="{% url 'predict' %}" method="POST">
+            {% csrf_token %}
+    		<textarea class='message-box' name="message" rows="15" cols="75" placeholder="Enter Your Script (100 words only) Here....">{{movieDesc}}</textarea><br/>
+    		<input type="submit" class="my-cta-button" value="Predict">
+    	</form>
+	</div>
+    
+    <div class="content">
+        <h1>Search For Movie With Spaces</h1>
+        <h6>You Can Copy Description From Below</h6>
+        <div class="form">
+            <form action="{% url 'mainpage' %}" method="POST">
+                {% csrf_token %}
+                <input type="text" name="web_link" id="content" placeholder="star wars"><br>
+                <input type="submit" value="Search" class="my-cta-button">
+            </form>
+        </div>
+        <div class="output">
+            <h2>Movie Name</h2>
+            <h3 class="data">{{movieTitle}}</h3>
+        </div>
+        <div class="output">  
+            <h2>Genre</h2>    
+            <h3>{{movieGenre}}</h3>
+        </div>
+        <div class="output">
+            <h2>Description</h2>  
+            <h3>{{movieDesc}}</h3>
+        </div>
+        <div class="output">    
+            <h2>Cast</h2>
+            <h3>{{movieCast}}</h3>
+        </div>
+        <div class="output">      
+            <h2>Year</h2>
+            <h3>{{movieYear}}</h3>
+        </div>
+        <div class="output">  
+            <h2>Runtime</h2>
+            <h3>{{movieRuntime}}</h3>
+        </div>
+        <div class="output">  
+            <h2>IMDB Rating</h2>
+            <h3>{{movieRating}}</h3>
+        </div>
+    </div>
+
+{% include 'footer.html' %}
+</body>
+</html>

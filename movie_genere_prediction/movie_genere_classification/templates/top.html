@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Movie Genre Predictor</title>
+    <style>
+        html{
+                height: 100%;
+                margin: 0;
+            }
+            body
+            {
+                font-family: Arial, Helvetica,sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .container
+            {
+                background-color: #f9f9f9;
+                padding: 30px;
+                position: relative;
+                background: linear-gradient(45deg, #ffffff,#F5F5F5, #DCDCDC, #D3D3D3, #C0C0C0, #A9A9A9,#808080,#707070);
+                background-size: 500% 500%;
+                animation: change-gradient 10s ease-in-out infinite;
+            }
+            @keyframes change-gradient 
+            {
+                0%{
+                    background-position: 0 50%;
+                }
+                50%{
+                    background-position: 100% 50%;
+                }
+                100%{
+                    background-position: 0 50%;
+                }
+            }
+            .container-heading
+            {
+                margin: 0;
+            }
+            .heading_font
+            {
+                color: #4973ff;
+                font-family: 'Yatra One', cursive;
+                font-size: 27px;
+            }
+            .result-prediction
+            {
+                color: #4973ff;
+                font-family: 'Yatra One', cursive;
+                font-size: 27px;
+            }
+            .description p
+            {
+                font-style: italic;
+                font-size: 14px;
+                margin: 3px 0 0;
+            }
+            .ml-container
+            {
+                margin: 30px 0;
+                flex: 1 0 auto;
+            }
+            .message-box
+            {
+                margin-bottom: 20px;
+                border-radius:10px;
+                padding:20px;
+                text-align: center;
+            }
+            .my-cta-button
+            {
+                background: #f9f9f9;
+                border: 2px solid #000000;
+                border-radius: 30px;
+                box-shadow: 3px 3px #8c8c8c;
+                padding: 10px 36px;
+                color: #000000;
+                display: inline-block;
+                font:bold 20px/1 "Times New Roman", sans-serif;
+                text-align: center;
+            }
+            .my-cta-button:hover
+            {
+                color: #4973ff;
+                border: 2px solid #4973ff;
+            }
+            .my-cta-button:active
+            {
+                box-shadow: 0 0;
+            }
+            #content
+            {
+                padding:20px 40px;
+                margin-bottom:20px;
+                border-radius: 20px;
+                text-align: center;
+            }
+            .output h2
+            {
+                background:#A9A9A9;
+                margin-top:20px;
+                margin-bottom:0px;
+            }.output h3
+            {
+                background:#DCDCDC;
+                margin-top:0px;
+            }  
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <h2 class='container-heading'><span class="heading_font">Genre Classifier and Scrapper</span> for Movies</h2>
+        <div class='description'>
+            <p>A Machine Learning Web App, Built with Django,NLTK and Beautiful Soup, Deployed using Heroku.</p>
+        </div>
+    </div>
+</body>
+</html>
