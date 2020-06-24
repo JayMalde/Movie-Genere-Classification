@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup
 from requests import get
 
 def predict(request):
-	filename = 'movie-genre-rfc-model.pkl'
+	filename = 'movie-genre-mnb-model.pkl'
 	classifier = pickle.load(open(filename, 'rb'))
-	cv = pickle.load(open('cv-transforms.pkl','rb'))
+	cv = pickle.load(open('cv-transform.pkl','rb'))
 	message = request.POST.get('message')
 	data = [message]
 	vect = cv.transform(data).toarray()
