@@ -43,3 +43,4 @@ pip install -r requirements.txt
 |   ├── manage.py
 |   └── movie-genre-mnb-model.pkl
 ```
+![](https://forthebadge.com/images/badges/made-with-python.svg)
