@@ -3,6 +3,9 @@
 ## Demo
 Link: [https://movie-genre-classification.herokuapp.com](https://movie-genre-classification.herokuapp.com/)
 
+[![](https://youtu.be/svEFW9gLU2E)](https://youtu.be/svEFW9gLU2E)
+
+
 ## Overview
 This is a simple movie genere classification and scraping website built on django and the trained model takes text as input and predicts the genre.
 
@@ -34,27 +37,27 @@ python manage.py runserver
 ## Directory Tree 
 ```
 ├── .idea 
-├── movie_genere_prediction 
+├── movie_genere_prediction (application folder)
 │   ├── movie_genere_classification
 |       ├── migrations
-|       ├── templates
-|       ├── admin.py
-|       ├── apps.py
-|       ├── models.py
-|       ├── tests.py
-|       ├── urls.py
-|       └── views.py
-│   ├── movie_genere_prediction
+|       ├── templates (html files are stored here)
+|       ├── admin.py (admin related data is stored here)
+|       ├── apps.py (information related to this application is stored here)
+|       ├── models.py (database information is stored here)
+|       ├── tests.py 
+|       ├── urls.py (urls related to this project are stored here)
+|       └── views.py (the working of each url is stored in a view)
+│   ├── movie_genere_prediction (project folder)
 │       ├── asgi.py
-|       ├── settings.py
-|       ├── urls.py
-|       └── wsgi.py
+|       ├── settings.py (main file where all the information is stored)
+|       ├── urls.py (urls are redirected to urls file of application)
+|       └── wsgi.py (this file is used to run the project when deploying)
 |   ├── requirements.txt
-|   ├── cv-transform.pkl
-|   ├── kaggle_movie_train.csv
-|   ├── Procfile
-|   ├── README.md
-|   ├── trainer.py
-|   ├── manage.py
-|   └── movie-genre-mnb-model.pkl
+|   ├── cv-transform.pkl (dataset model)
+|   ├── kaggle_movie_train.csv (dataset)
+|   ├── Procfile (it contains info on how to run the application when deployed)
+|   ├── README.md (markdown file or documentation of this project)
+|   ├── trainer.py (file which contains how the model and dataset is transformed)
+|   ├── manage.py (this file is used to run the project on client side)
+|   └── movie-genre-mnb-model.pkl (pickle model of naive bayes classifier)
 ```
