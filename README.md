@@ -3,7 +3,8 @@
 ## Demo
 Link: [https://movie-genre-classification.herokuapp.com](https://movie-genre-classification.herokuapp.com/)
 
-[![Movie Genre Classification using NLP](https://img.youtube.com/vi/svEFW9gLU2E/0.jpg)](https://www.youtube.com/watch?v=svEFW9gLU2E "Movie Genre Classification using NLP")
+## Watch A Turorial By Clicking On This Link
+[![Movie Genre Classification using NLP](1.png)](https://www.youtube.com/watch?v=svEFW9gLU2E "Movie Genre Classification using NLP")
 
 ## Overview
 This is a simple movie genere classification and scraping website built on django and the trained model takes text as input and predicts the genre.
