@@ -1,7 +1,7 @@
 # Movie Genere Classification
 
 ## Demo
-Link: [https://movie-genre-classification.herokuapp.com](https://movie-genre-classification.herokuapp.com/) (It will not work after 1 month)
+Link: [https://movie-genre-classification.herokuapp.com](https://movie-genre-classification.herokuapp.com/) ( If you are watching after 2-3 months It may not work )
 
 ## Watch A Turorial By Clicking On This Link
 [![Movie Genre Classification using NLP](1.png)](https://www.youtube.com/watch?v=svEFW9gLU2E "Movie Genre Classification using NLP")
